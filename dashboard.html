@@ -10,155 +10,154 @@
     <script src="https://kit.fontawesome.com/cf18cbc6fa.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container d-flex justify-content-lg-around">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./tfimg/logo.png" width="130" height="65" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center fw-bolder">
-                        <li class="nav-item me-4">
-                            <form class="d-flex">
-                                <input class="form-control me-2 rounded-pill shadow-sm fontAwesome" type="search" placeholder="&#xf002; Search..." aria-label="Search">
-                            </form>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Anjelina
-                                <img class="ms-2 rounded-circle" src="./tfimg/anjelina.jpg" width="40" height="40"
-                                    alt="">
-                            </a>
-                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item text-center" href="#">
-                                        <i class="fas fa-user me-1"></i> My Profile</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-center" href="#">
-                                        <i class="fas fa-pen me-1"></i> Edit Profile
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-    <main class="bg-main">
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menubar</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="menubar">
-                    <li>
-                        <a href="dashboard.html">
-                            <i class="fas fa-home"></i> Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="services.html">
-                            <i class="fas fa-user-cog"></i> Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="orders.html">
-                            <i class="fas fa-shopping-cart"></i> Order History
-                        </a>
-                    </li>
-                    <li>
-                        <a href="subscriptions.html">
-                            <i class="fas fa-dollar-sign"></i> Subscriptions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="events.html">
-                            <i class="far fa-calendar"></i> Events & Webinars
-                        </a>
-                    </li>
-                    <li>
-                        <a href="notifications.html">
-                            <i class="far fa-bell"></i> Notifications
-                        </a>
-                    </li>
-                    <li>
-                        <a href="settings.html">
-                            <i class="fas fa-cog"></i> Settings
-                        </a>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
-                    </li>
-                </ul>
-            </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menubar</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+            <ul class="menubar">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html">
+                        <i class="fas fa-user-cog"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <i class="fas fa-shopping-cart"></i> Order History
+                    </a>
+                </li>
+                <li>
+                    <a href="subscriptions.html">
+                        <i class="fas fa-dollar-sign"></i> Subscriptions
+                    </a>
+                </li>
+                <li>
+                    <a href="events.html">
+                        <i class="far fa-calendar"></i> Events & Webinars
+                    </a>
+                </li>
+                <li>
+                    <a href="notifications.html">
+                        <i class="far fa-bell"></i> Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-        <div class="row p-0 mx-0 container-fluid px-0 px-md-4">
-            <div class="w-20 bg-white shadow px-1 pt-5 d-none d-lg-block">
-                <ul class="menubar">
-                    <li>
-                        <a href="dashboard.html">
-                            <i class="fas fa-home"></i> Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="services.html">
-                            <i class="fas fa-user-cog"></i> Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="orders.html">
-                            <i class="fas fa-shopping-cart"></i> Order History
-                        </a>
-                    </li>
-                    <li>
-                        <a href="subscriptions.html">
-                            <i class="fas fa-dollar-sign"></i> Subscriptions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="events.html">
-                            <i class="far fa-calendar"></i> Events & Webinars
-                        </a>
-                    </li>
-                    <li>
-                        <a href="notifications.html">
-                            <i class="far fa-bell"></i> Notifications
-                        </a>
-                    </li>
-                    <li>
-                        <a href="settings.html">
-                            <i class="fas fa-cog"></i> Settings
-                        </a>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 w-80 ps-lg-3 py-3">
+    <div class="w-20 h-100 position-fixed bg-white shadow-sm px-1 pt-2 d-none d-lg-block">
+        <a class="d-none d-lg-block navbar-brand" href="index.html">
+            <img src="./tfimg/logo.png" class="d-block mx-auto" width="130" height="60" alt="Logo">
+        </a>
+        <ul class="menubar pt-5">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="fas fa-user-cog"></i> Services
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-shopping-cart"></i> Order History
+                </a>
+            </li>
+            <li>
+                <a href="subscriptions.html">
+                    <i class="fas fa-dollar-sign"></i> Subscriptions
+                </a>
+            </li>
+            <li>
+                <a href="events.html">
+                    <i class="far fa-calendar"></i> Events & Webinars
+                </a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="far fa-bell"></i> Notifications
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
+            </li>
+        </ul>
+    </div>
 
-                <button class="btn btn-sm btn-outline-primary d-block mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </button>
+    <main class="w-80">
+        <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid d-flex justify-content-lg-around px-1 px-md-5">
+                    <a class="d-lg-none navbar-brand ps-0 ps-md-3" href="index.html">
+                        <img src="./tfimg/logo.png" width="130" height="65" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center fw-bolder">
+                            <li class="nav-item me-4">
+                                <form class="d-flex">
+                                    <input class="form-control me-2 rounded-pill shadow-sm fontAwesome" type="search" placeholder="&#xf002; Search..." aria-label="Search">
+                                </form>
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Anjelina
+                                    <img class="ms-2 rounded-circle" src="./tfimg/anjelina.jpg" width="40" height="40"
+                                        alt="">
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <i class="fas fa-user me-1"></i> My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <i class="fas fa-pen me-1"></i> Edit Profile
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bg-main ps-2 ps-lg-3 py-3 pe-2">
+
+            <button class="btn btn-sm px-3 btn-outline-primary mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+
+            <div class="dashboard-container overflow-hidden">
                 <section class="dashboard-heading">
                     <h3 class="fw-bold">Hello, Anjelina</h3>
                     <h4>This is what we got for you today</h4>
@@ -274,7 +273,7 @@
 
                 <section class="events mt-5">
                     <h3 class="fw-bold border-bottom border-gray pb-3 mb-5">Upcoming Events</h3>
-                    <div class="row gy-3 gy-lg-0 justify-content-between">
+                    <div class="row mx-0 gy-3 gy-lg-0 justify-content-between">
                         <div class="col-12 col-lg-6">
                             <div class="card shadow rounded-3">
                                 <div class="row g-0">
@@ -310,7 +309,8 @@
                                     </div>
                                     <div class="col-8">
                                         <div class="card-body">
-                                            <h5 class="card-title fw-bold text-truncate">For Large Text, Click to expan the area</h5>
+                                            <h5 class="card-title fw-bold text-truncate">For Large Text, Click to expan the area
+                                            </h5>
                                             <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             </p>
                                             <h6><span class="fw-bold">Speaker:</span> Rabiul Islam</h6>
@@ -332,58 +332,65 @@
                     </div>
 
                 </section>
-
             </div>
+
         </div>
+        <footer class="bg-blue p-2 pt-4 p-md-5 pb-md-2">
+            <div class="d-flex justify-content-center mb-4">
+                <a href="" class="me-5">PRIVACY POLICY</a>
+                <a href="">TERMS OF USE</a>
+            </div>
 
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com/techforing/">
+                    <img src="./tfimg/facebook.png" class="me-3" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/techforingltd./">
+                    <img src="./tfimg/linkedin.png" class="me-3" alt="">
+                </a>
+                <a href="https://twitter.com/techforingltd?lang=en">
+                    <img src="./tfimg/twitter-(1).png" class="me-3" alt="">
+                </a>
+                <a href="https://www.instagram.com/techforingltd/">
+                    <img src="./tfimg/Instagram.png" alt="">
+                </a>
+            </div>
 
+            <div class="p-3 p-md-4 pb-2 text-center text-white ">
+                <p class="pt-4 border-top border-light">Copyright &copy; 2021 Techforing Ltd.
+                </p>
+            </div>
+        </footer>
     </main>
-    <footer class="bg-blue p-2 pt-4 p-md-5 pb-md-2">
 
-        <div class="d-flex justify-content-center mb-4">
-            <a href="" class="me-5">PRIVACY POLICY</a>
-            <a href="">TERMS OF USE</a>
-        </div>
 
-        <div class="d-flex justify-content-center align-items-center">
-            <a href="https://www.facebook.com/techforing/">
-                <img src="./tfimg/facebook.png" class="me-3" alt="">
-            </a>
-            <a href="https://www.linkedin.com/company/techforingltd./">
-                <img src="./tfimg/linkedin.png" class="me-3" alt="">
-            </a>
-            <a href="https://twitter.com/techforingltd?lang=en">
-                <img src="./tfimg/twitter-(1).png" class="me-3" alt="">
-            </a>
-            <a href="https://www.instagram.com/techforingltd/">
-                <img src="./tfimg/Instagram.png" alt="">
-            </a>
-        </div>
 
-        <div class="p-3 p-md-4 pb-2 text-center text-white ">
-            <p class="pt-4 border-top border-light">Copyright &copy; 2021 Techforing Ltd.
-            </p>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="menubar.js"></script>
-
     <script>
-        let updateActiveRow = () => {
+        let updateActiveRow = (slide) => {
             rows.forEach(row => {
                 row.classList.add('d-none');
-                if (row.classList.contains('show-next'))
-                    row.classList.remove('show-next');
+                if (row.classList.contains('slide-right'))
+                    row.classList.remove('slide-right');
+                if (row.classList.contains('slide-left'))
+                    row.classList.remove('slide-left');
             });
             if (activeState >= rows.length || activeState < 0) {
                 activeState = 0;
             }
+
             rows[activeState].classList.remove('d-none');
             rows[activeState + 1].classList.remove('d-none');
-            rows[activeState].classList.add('show-next');
-            rows[activeState + 1].classList.add('show-next');
 
+            if (slide == 'right') {
+                rows[activeState].classList.add('slide-right');
+                rows[activeState + 1].classList.add('slide-right');
+            } else if (slide == 'left') {
+                rows[activeState].classList.add('slide-left');
+                rows[activeState + 1].classList.add('slide-left');
+            }
         }
 
         let rows = document.querySelectorAll('.reading-list .row');
@@ -391,14 +398,14 @@
         let next = document.getElementById('next-btn');
         let activeState = 0;
 
-        updateActiveRow();
+        updateActiveRow('none');
         next.addEventListener('click', () => {
             activeState += 2;
-            updateActiveRow();
+            updateActiveRow('right');
         });
         prev.addEventListener('click', () => {
             activeState -= 2;
-            updateActiveRow();
+            updateActiveRow('left');
         });
 
         var elements = document.querySelectorAll('.card-body h5');
