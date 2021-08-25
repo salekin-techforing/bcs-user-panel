@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./tfimg/Techforing-Icon.png" type="image/x-icon">
+    <title>Services</title>
+    <script src="https://kit.fontawesome.com/cf18cbc6fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menubar</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menubar">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html">
+                        <i class="fas fa-user-cog"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <i class="fas fa-shopping-cart"></i> Order History
+                    </a>
+                </li>
+                <li>
+                    <a href="subscriptions.html">
+                        <i class="fas fa-dollar-sign"></i> Subscriptions
+                    </a>
+                </li>
+                <li>
+                    <a href="events.html">
+                        <i class="far fa-calendar"></i> Events & Webinars
+                    </a>
+                </li>
+                <li>
+                    <a href="notifications.html">
+                        <i class="far fa-bell"></i> Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-20 h-100 position-fixed bg-white shadow-sm px-1 pt-2 d-none d-lg-block">
+        <a class="d-none d-lg-block navbar-brand" href="index.html">
+            <img src="./tfimg/logo.png" class="d-block mx-auto" width="130" height="60" alt="Logo">
+        </a>
+        <ul class="menubar pt-5">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="fas fa-user-cog"></i> Services
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-shopping-cart"></i> Order History
+                </a>
+            </li>
+            <li>
+                <a href="subscriptions.html">
+                    <i class="fas fa-dollar-sign"></i> Subscriptions
+                </a>
+            </li>
+            <li>
+                <a href="events.html">
+                    <i class="far fa-calendar"></i> Events & Webinars
+                </a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="far fa-bell"></i> Notifications
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
+            </li>
+        </ul>
+    </div>
+
+    <main class="w-80">
+        <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid d-flex justify-content-lg-around px-1 px-md-5">
+                    <a class="d-lg-none navbar-brand ps-0 ps-md-3" href="index.html">
+                        <img src="./tfimg/logo.png" width="130" height="65" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center fw-bolder">
+                            <li class="nav-item me-4">
+                                <form class="d-flex">
+                                    <input class="form-control me-2 rounded-pill shadow-sm fontAwesome" type="search" placeholder="&#xf002; Search..." aria-label="Search">
+                                </form>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Anjelina
+                                    <img class="ms-2 rounded-circle" src="./tfimg/anjelina.jpg" width="40" height="40"
+                                        alt="">
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <i class="fas fa-user me-1"></i> My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-center" href="#">
+                                            <i class="fas fa-pen me-1"></i> Edit Profile
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bg-main ps-2 ps-lg-3 py-3">
+
+            <button class="btn btn-sm px-3 btn-outline-primary mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+
+            <section class="services position-relative">
+                <h4 class="fw-bold border-bottom border-gray pb-14p">All Business Cybersecurity Services
+                </h4>
+
+                <button id="back-btn" class="btn btn-outline-success btn-sm d-none position-absolute top-sm-0 end-0">
+                    <i class="fas fa-long-arrow-alt-left me-2"></i>Back to list
+                </button>
+
+                <div class="services-content">
+                    <div class="content-detail row me-0 pe-2 gy-4 mt-4">
+                        <div class="col-12 col-lg-3 mb-5 mb-md-0">
+                            <h5 class="fw-bold">Risk assessment</h5>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/user@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Vulnerability Assessment</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/user@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Penetration Testing </h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-3 mb-5 mb-md-0">
+                            <h5 class="fw-bold">Incident Response</h5>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/remove@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Hack Recovery</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/investigation@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Malware Removal</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/investigation@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Crime & Digital Forensic Investigation
+                                    </h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-3 mb-5 mb-md-0">
+                            <h5 class="fw-bold">Security Compliance</h5>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/web-browser@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">ISO 27001</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/malware@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">PCI DSS</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/folder@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">HIPAA</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/folder@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">GDPR</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 mb-5 mb-md-0">
+                            <h5 class="fw-bold">SMB Solution</h5>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/web-browser@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Managed Security Solution</h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4 bg-lightgreen g-0 px-2 py-3 rounded shadow-md d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="./tfimg/malware@1X.png" alt="">
+                                </div>
+                                <div class="col-11 ps-2">
+                                    <h6 class="fw-bold">Plug & Play Program </h6>
+                                    <p class="multiline lh-1 fs-14 text-truncate">Personal information security from cyber criminals and unknown entities
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="bg-navy btn btn-sm px-3 text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mt-5 fw-bold border-bottom border-gray pb-14p">Personal Cybersecurity for Your Employees
+                    </h4>
+                    <div class="row mt-4 bg-lightgreen w-75 g-0 px-2 py-3 rounded shadow-md d-flex justify-content-betwees">
+                        <div class="col-auto">
+                            <img src="./tfimg/user@1X.png" alt="">
+                        </div>
+                        <div class="col-11 ps-2">
+                            <h6 class="fw-bold">Concierge Cybersecurity</h6>
+                            <p class="lh-1 fs-6">Our personal cybersecurity services will protect your employee and employees family in cyberspace always.
+                            </p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button data-bs-toggle="modal" data-bs-target="#pcsModal" class="bg-navy btn btn-sm px-3 text-white">View</button>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-5 fw-bold border-bottom border-gray pb-14p">Training Program for Your Employees
+                    </h4>
+                    <div class="row mt-4 bg-lightgreen w-75 g-0 px-2 py-3 rounded shadow-md d-flex justify-content-betwees">
+                        <div class="col-auto">
+                            <img src="./tfimg/user@1X.png" alt="">
+                        </div>
+                        <div class="col-11 ps-2">
+                            <h6 class="fw-bold">Leading Ethical Hacking Course</h6>
+                            <p class="lh-1 fs-6">Our personal cybersecurity services will protect your employee and employees family in cyberspace always.
+                            </p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button data-bs-toggle="modal" data-bs-target="#trainingModal" class="bg-navy btn btn-sm px-3 text-white">View</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- modal for pcs employees -->
+                <div class="modal fade" id="pcsModal" tabindex="-1" aria-labelledby="pcsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content border-0 bg-main">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body pb-5">
+                                <h4 class="px-3 fw-bold text-center">General Subscription packages FOR C-SUIT executive to get a quotation
+                                </h4>
+                                <div class="mt-4 row text-dark mx-0 d-flex justify-content-center justify-content-sm-between">
+                                    <div class="package col-9 col-sm-4 col-md-4 px-4">
+                                        <div class="bg-lightgreen shadow p-3 rounded">
+                                            <h5 class="fw-bold text-center">MICRO</h5>
+                                            <table class="mx-auto mb-3">
+                                                <tr>
+                                                    <td>Phone Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Business Email Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Social Media Security (Per User)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PC/ MAC Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Financial Account Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="info-btn">
+                                                <p class="mb-0">
+                                                    <i class="fas fa-laptop"></i> Max Device
+                                                </p>
+                                                <p class="mb-0 fw-bold">5</p>
+                                            </div>
+                                            <button class="mt-3 d-block mx-auto text-center btn bg-navy px-3 py-1">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div class="package mt-4 mt-sm-0 col-9 col-sm-4 col-md-4 px-4">
+                                        <div class="bg-lightgreen shadow p-3 rounded">
+                                            <h5 class="fw-bold text-center">SMALL</h5>
+                                            <table class="mx-auto mb-3">
+                                                <tr>
+                                                    <td>Phone Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Business Email Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Social Media Security (Per User)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PC/ MAC Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Financial Account Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="info-btn">
+                                                <p class="mb-0">
+                                                    <i class="fas fa-laptop"></i> Max Device
+                                                </p>
+                                                <p class="mb-0 fw-bold">10</p>
+                                            </div>
+                                            <button class="mt-3 d-block mx-auto text-center btn bg-navy px-3 py-1">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div class="package mt-4 mt-sm-0 col-9 col-sm-4 col-md-4 px-4">
+                                        <div class="bg-lightgreen shadow p-3 rounded">
+                                            <h5 class="fw-bold text-center">MEDIUM</h5>
+                                            <table class="mx-auto mb-3">
+                                                <tr>
+                                                    <td>Phone Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Business Email Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Social Media Security (Per User)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PC/ MAC Security (Per user)
+
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Financial Account Security (Per user)
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="info-btn">
+                                                <p class="mb-0">
+                                                    <i class="fas fa-laptop"></i> Max Device
+                                                </p>
+                                                <p class="mb-0 fw-bold">15</p>
+                                            </div>
+                                            <button class="mt-3 d-block mx-auto text-center btn bg-navy px-3 py-1">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- modal for training program -->
+                <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content border-0 bg-main">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close rounded-circle bg-green" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-5 pb-5">
+                                <h4 class="px-3 fw-bold text-center">Provide information to get a quotation for employee training program
+                                </h4>
+
+                                <form class="mt-4" action="">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>How many employees are there in your
+                                            organization?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="mt-4 form-select" aria-label="Default select example">
+                                        <option selected>How many employees you want to train?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="mt-4 form-select" aria-label="Default select example">
+                                        <option selected>Which training program you want to enroll?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                    <button class="mt-5 d-block mx-auto btn bg-navy px-5 py-2">Submit</button>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vulnerability Assessment -->
+                <div class="preview-form pt-3 d-none">
+                    <div class="row mx-0 bg-lightgreen shadow-md">
+                        <div class="col-md-3 py-4 d-flex align-items-center">
+                            <img src="./tfimg/vulnerability_assesment.png" class="img-fluid d-block mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-center align-items-center">
+                            <div class="py-2">
+                                <h4 class="fw-bold">Vulnerability Assessment</h4>
+                                <h6 class="fw-semi text-start fontAwesome mt-3">UNCOVER AND MITIGATE CYBER THREATS BY VULNERABILITY ASSESSMENT
+                                </h6>
+                                <p class="mt-3 mb-0">Most businesses take steps to evaluate their network security after experiencing an unfortunate event or because they are concerned about potential future threats. Active steps for prevention are better than any cure, and
+                                    information security is no different. Any networked IT infrastructure is potentially vulnerable, so anyone managing a corporate or commercial network needs to know its weak points in order to address protecting it.
+                                    We offer a unique approach to security and specifically to vulnerability assessment to protect your business from harm, secure it from intrusion maintain the confidentiality of your data, and seclude commercial information
+                                    from prying eyes. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">Our Focus</h5>
+                        <div class="mt-3">
+                            <h6 class="lh-base">OSWAP top 10 – A reference list of the 10 most critical web application security risks.
+                            </h6>
+                            <h6 class="lh-base">SANS top 20 critical security controls – A reference list of the common errors in software’s and apps.</h6>
+                            <h6 class="lh-base">CVE (Common Vulnerabilities and Exposures) –A reference list of the publicly known security vulnerabilities.</h6>
+                            <h6 class="lh-base">Application Program Development – Including Zero day attacks.</h6>
+                            <h6 class="lh-base">Assessment tools: Both open source and paid tools.</h6>
+                        </div>
+                    </div>
+
+                    <div class="whom-we-serve my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">Our Approach</h5>
+                        <p class="mt-3">Our vulnerability assessment services are expressly designed to test your organization’s internal and external infrastructure against known vulnerabilities and exposures. Once identified, you are able to efficiently fix the issues.
+                            Our first step is to study in detail all the threats that apply specifically to you in your protected environment. We work from the point-of view of an adversary. During this process, we figure out all potential avenues which
+                            adversaries might take to infiltrate, exploit, surveil, steal or attack your organization
+                        </p>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold">Social engineering testing</li>
+                                <li class="lh-base fw-bold">Internal breach assessment</li>
+                                <li class="lh-base fw-bold">External breach assessment</li>
+                                <li class="lh-base fw-bold">Wireless network testing</li>
+                                <li class="lh-base fw-bold">Penetration testing</li>
+                                <li class="lh-base fw-bold">Assessment Report</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                    <div class="my-3 pt-5 px-3">
+                        <div class="row gy-5 d-flex justify-content-lg-between">
+                            <div class="col-md-5 text-start">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Provide information to
+                                    get a quotation</a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Talk to one of our
+                                    representatives</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PENETRATION TESTING -->
+                <div class="preview-form pt-3 d-none">
+                    <div class="row mx-0 bg-lightgreen shadow-md">
+                        <div class="col-md-3 py-4 d-flex align-items-center">
+                            <img src="./tfimg/penetration_testing.png" class="img-fluid d-block mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-center align-items-center">
+                            <div class="py-2">
+                                <h4 class="fw-bold">Penetration Testing</h4>
+                                <h6 class="fw-semi text-start fontAwesome mt-3">RED TEAM PENETRATION TESTING TO DETERMINE YOUR SECURITY SYSTEM WEAKNESS
+                                </h6>
+                                <p class="mt-3 mb-0">Everywhere we look, organizations are being hacked. Many believe that firewalls and anti-virus products are sufficient protection. Unfortunately, this is not true. Techforing.com provides a comprehensive Penetration Test
+                                    service that identifies the vulnerabilities within systems and infrastructure and determines the exposure to cyber threats such as DDoS attacks, malware, data theft, and many more. The Penetration Test results in an
+                                    in-depth report that includes actionable recommendations of suitable and proactive countermeasures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">Industries We Serve</h5>
+                        <div class="mt-3 d-flex justify-content-between flex-wrap">
+                            <h6 class="lh-base">Retail
+                            </h6>
+                            <h6 class="lh-base">Transport</h6>
+                            <h6 class="lh-base">Education</h6>
+                            <h6 class="lh-base">Banking</h6>
+                            <h6 class="lh-base">Healthcare</h6>
+                            <h6 class="lh-base">Hospitality</h6>
+                            <h6 class="lh-base">Information Technology</h6>
+                        </div>
+                    </div>
+
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">Our Mathodology</h5>
+                        <p class="mt-3">At Techforing.com we use real people to perform system breaches. At the same time, we leverage sophisticated tools along with the same methods that a malicious hacker would. In this way, we make the test as realistic as possible.
+                            Our overall process of penetration testing can be broken down into a series of four phases identified highlighted below. When put together, these phases form a comprehensive methodology for completing a successful Penetration
+                            Test.
+                        </p>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold">Scoping and Exploration</li>
+                                <li class="lh-base fw-bold">Discovery and Analysis</li>
+                                <li class="lh-base fw-bold">Notification and Reporting</li>
+                                <li class="lh-base fw-bold">Exploitation</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">Our Focus
+                        </h5>
+                        <h6 class="fw-bold">Our Penetration Testing services focus on:</h6>
+                        <div class="mt-4">
+                            <ol class="d-grid gap-3">
+                                <li>Networks/Firewalls </li>
+                                <li>Wireless network testing
+                                </li>
+                                <li>Physical security testing</li>
+
+                                <li>Web applications such as HTTP / HTTPS (SSL)</li>
+                                <li>Technical testing of your cloud based infrastructure.</li>
+                                <li>Technical testing of your internal network infrastructure</li>
+                                <li>Networking gear including routers, switches, access points and more</li>
+                                <li>Technical testing on any other IT system or peripheral that may pose security vulnerability in a client’s environment</li>
+                                <li>Technical testing of your internally accessible infrastructure such as workstations, mobile devices, DNS services, email servers, databases, VOIP services, etc</li>
+                                <li>Technical testing of your externally accessible infrastructure such as servers in your DMZ, RDP (Remote Desktop Protocol), VPN, IPsec end points, web applications, etc.
+                                </li>
+
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="my-5 pt-5 px-3">
+                        <div class="row gy-5 d-flex justify-content-lg-between">
+                            <div class="col-md-5 text-start">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">provide information to
+                                    get a quotation</a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Talk to one of our
+                                    representatives</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hack Recovery -->
+                <div class="preview-form pt-3 d-none">
+                    <div class="row mx-0 bg-lightgreen shadow-md">
+                        <div class="col-md-3 py-4 d-flex align-items-center">
+                            <img src="./tfimg/hack_recovery.png" class="img-fluid d-block mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-center align-items-center">
+                            <div>
+                                <h4 class="fw-bold">Hack Recovery</h4>
+                                <h6 class="fw-semi text-start fontAwesome mt-3">HACK RECOVERY SERVICE - STAY ONE STEP AHEAD
+                                </h6>
+                                <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">DIGITAL ASSET HACKS WE HANDLE</h5>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold">Website Recovery</li>
+                                <li class="lh-base fw-bold">Work station & office network</li>
+                                <li class="lh-base fw-bold">Server & Data center</li>
+                                <li class="lh-base fw-bold">Cloud Infrastructure</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                    <div class="my-5 pt-5 px-3">
+                        <div class="row gy-5 d-flex justify-content-lg-between">
+                            <div class="col-md-5 text-start">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Provide information to
+                                    get a quotation</a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Talk to one of our
+                                    representatives</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Malware Removal -->
+                <div class="preview-form pt-3 d-none">
+                    <div class="row mx-0 bg-lightgreen shadow-md">
+                        <div class="col-md-3 py-4 d-flex align-items-center">
+                            <img src="./tfimg/malware_removal.png" class="img-fluid d-block mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-center align-items-center">
+                            <div class="py-2">
+                                <h4 class="fw-bold">Malware Removal</h4>
+                                <h6 class="fw-semi text-start fontAwesome mt-3">BEST MALWARE REMOVAL SERVICE
+                                </h6>
+                                <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">OUR APPROACH</h5>
+                        <p class="mt-3">Websites, servers, data centers, and office networks can often get infected with malware, rootkits, and ransomware. We take a step by step approach for malware removal, our steps include:-
+                        </p>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold me-3">Detect infection</li>
+                                <li class="lh-base fw-bold me-3">Contain the damage</li>
+                                <li class="lh-base fw-bold me-3">Remove malware & spyware</li>
+                                <li class="lh-base fw-bold me-3">Restore operational functionality</li>
+                                <li class="lh-base fw-bold me-3">Notify the authorities</li>
+                                <li class="lh-base fw-bold">Regain secured access</li>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">OUR MALWARE & RANSOMWARE SERVICE COVERS</h5>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold">Web Malware</li>
+                                <li class="lh-base fw-bold">Work station & office network Ransomware</li>
+                                <li class="lh-base fw-bold">Server & Data Center Malware</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="my-5 pt-5 px-3">
+                        <div class="row gy-5 d-flex justify-content-lg-between">
+                            <div class="col-md-5 text-start">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Provide information to
+                                    get a quotation</a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Talk to one of our
+                                    representatives</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Crime & Digital Forensic Investigation -->
+                <div class="preview-form pt-3 d-none">
+                    <div class="row mx-0 bg-lightgreen shadow-md">
+                        <div class="col-md-3 py-4 d-flex align-items-center">
+                            <img src="./tfimg/crime_and_digital.png" class="img-fluid d-block mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-center align-items-center">
+                            <div class="py-2">
+                                <h4 class="fw-bold">Crime & Digital Forensic Investigation</h4>
+                                <h6 class="fw-semi text-start fontAwesome mt-3">WE UNCOVER THE CRIME AND THE CRIMINAL
+                                </h6>
+                                <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">OUR APPROACH</h5>
+                        <p class="mt-3">Very few forensic cases match with each other. Intruders steal computer data, and hackers break into websites and wreak havoc. Our cyber crime investigators effectively detect cyber crimes and try to track down the perpetrators.
+                        </p>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold me-3">Search for Physical Evidence</li>
+                                <li class="lh-base fw-bold me-3">Tracking Traces left by the hacker</li>
+                                <li class="lh-base fw-bold me-3">Understand The Ultimate Motive</li>
+                                <li class="lh-base fw-bold me-3">Reveal whereabouts of the guilty</li>
+                                <li class="lh-base fw-bold me-3">Check for any backdoors.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="my-3 py-4 px-3 bg-lightgreen shadow-md">
+                        <h5 class="fw-bold">CYBERCRIME WE INVESTIGATE</h5>
+                        <div class="mt-3">
+                            <ol class="d-flex justify-content-between flex-wrap">
+                                <li class="lh-base fw-bold">Business Fraud Investigation</li>
+                                <li class="lh-base fw-bold">Internal Data Theft Investigation</li>
+                                <li class="lh-base fw-bold">external Hacking & Data Theft Investigation</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="my-5 pt-5 px-3">
+                        <div class="row gy-5 d-flex justify-content-lg-between">
+                            <div class="col-md-5 text-start">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Provide information to
+                                    get a quotation</a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href=" " class="fw-bold btn btn-outline-dark px-2 py-1">Talk to one of our
+                                    representatives</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        <footer class="bg-blue p-2 pt-4 p-md-5 pb-md-2">
+            <div class="d-flex justify-content-center mb-4">
+                <a href="" class="me-5">PRIVACY POLICY</a>
+                <a href="">TERMS OF USE</a>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com/techforing/">
+                    <img src="./tfimg/facebook.png" class="me-3" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/techforingltd./">
+                    <img src="./tfimg/linkedin.png" class="me-3" alt="">
+                </a>
+                <a href="https://twitter.com/techforingltd?lang=en">
+                    <img src="./tfimg/twitter-(1).png" class="me-3" alt="">
+                </a>
+                <a href="https://www.instagram.com/techforingltd/">
+                    <img src="./tfimg/Instagram.png" alt="">
+                </a>
+            </div>
+
+            <div class="p-3 p-md-4 pb-2 text-center text-white ">
+                <p class="pt-4 border-top border-light">Copyright &copy; 2021 Techforing Ltd.
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menubar.js"></script>
+    <script>
+        let backBtn = document.getElementById('back-btn');
+        let servicesContent = document.querySelector('.services-content');
+        let previewForms = document.querySelectorAll('.preview-form');
+        let allBtn = document.querySelectorAll('.services-content .content-detail button');
+
+
+        allBtn.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                servicesContent.classList.add('d-none');
+                previewForms[index].classList.remove('d-none');
+                backBtn.classList.remove('d-none');
+            });
+        });
+
+        backBtn.addEventListener('click', () => {
+            servicesContent.classList.remove('d-none');
+            previewForms.forEach(form => {
+                form.classList.add('d-none');
+            });
+            backBtn.classList.add('d-none');
+        });
+
+        var elements = document.querySelectorAll('.multiline');
+        elements.forEach(element => {
+            element.addEventListener('click', () => {
+                element.classList.toggle("text-truncate");
+            })
+        });
+    </script>
+</body>
+
+</html>

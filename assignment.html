@@ -1,511 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./tfimg/Techforing-Icon.png" type="image/x-icon">
-    <title>Settings</title>
-    <script src="https://kit.fontawesome.com/cf18cbc6fa.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menubar</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="menubar">
-                <li>
-                    <a href="dashboard.html">
-                        <i class="fas fa-home"></i> Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="services.html">
-                        <i class="fas fa-user-cog"></i> Services
-                    </a>
-                </li>
-                <li>
-                    <a href="orders.html">
-                        <i class="fas fa-shopping-cart"></i> Order History
-                    </a>
-                </li>
-                <li>
-                    <a href="subscriptions.html">
-                        <i class="fas fa-dollar-sign"></i> Subscriptions
-                    </a>
-                </li>
-                <li>
-                    <a href="events.html">
-                        <i class="far fa-calendar"></i> Events & Webinars
-                    </a>
-                </li>
-                <li>
-                    <a href="notifications.html">
-                        <i class="far fa-bell"></i> Notifications
-                    </a>
-                </li>
-                <li>
-                    <a href="settings.html">
-                        <i class="fas fa-cog"></i> Settings
-                    </a>
-                </li>
-                <li>
-                    <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="w-20 h-100 position-fixed bg-white shadow-sm px-1 pt-2 d-none d-lg-block">
-        <a class="d-none d-lg-block navbar-brand" href="index.html">
-            <img src="./tfimg/logo.png" class="d-block mx-auto" width="130" height="60" alt="Logo">
-        </a>
-        <ul class="menubar pt-5">
-            <li>
-                <a href="dashboard.html">
-                    <i class="fas fa-home"></i> Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="services.html">
-                    <i class="fas fa-user-cog"></i> Services
-                </a>
-            </li>
-            <li>
-                <a href="orders.html">
-                    <i class="fas fa-shopping-cart"></i> Order History
-                </a>
-            </li>
-            <li>
-                <a href="subscriptions.html">
-                    <i class="fas fa-dollar-sign"></i> Subscriptions
-                </a>
-            </li>
-            <li>
-                <a href="events.html">
-                    <i class="far fa-calendar"></i> Events & Webinars
-                </a>
-            </li>
-            <li>
-                <a href="notifications.html">
-                    <i class="far fa-bell"></i> Notifications
-                </a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fas fa-cog"></i> Settings
-                </a>
-            </li>
-            <li>
-                <button type="button" class="btn btn-outline-dark px-4">Log Out</button>
-            </li>
-        </ul>
-    </div>
-
-    <main class="w-80">
-        <header>
-            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid d-flex justify-content-lg-around px-1 px-md-5">
-                    <a class="d-lg-none navbar-brand ps-0 ps-md-3" href="index.html">
-                        <img src="./tfimg/logo.png" width="130" height="65" alt="Logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center fw-bolder">
-                            <li class="nav-item me-4">
-                                <form class="d-flex">
-                                    <input class="form-control me-2 rounded-pill shadow-sm fontAwesome" type="search" placeholder="&#xf002; Search..." aria-label="Search">
-                                </form>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Anjelina
-                                    <img class="ms-2 rounded-circle" src="./tfimg/anjelina.jpg" width="40" height="40"
-                                        alt="">
-                                </a>
-                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="dropdown-item text-center" href="#">
-                                            <i class="fas fa-user me-1"></i> My Profile</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item text-center" href="#">
-                                            <i class="fas fa-pen me-1"></i> Edit Profile
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
+<div class="row" data-component="grid" data-builder="edit del clone dnd col">
+    <div class="col-md-12" data-builder="edit del dnd">
+        <div class="js_kartra_component_holder">
+            <div data-component="divider">
+                <hr class="kartra_divider kartra_divider--border-small kartra_divider--border-royal-blue-two pull-center kartra_divider--small" data-builder="edit del clone dnd" data-selector="hr.kartra_divider" style="border-color: rgb(47, 197, 45); border-top-style: solid; border-top-width: 5px; margin: 0px auto;">
+            </div>
+            <div data-component="text">
+                <div class="kartra_text" data-builder="content del clone dnd" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                    <p style="text-align: center; font-size: 1.4rem;"><strong><span style="color: rgb(0, 0, 128); font-size: 1.4rem;">DON'T LET&nbsp;THE BLACKMAILERS WIN</span></strong></p>
                 </div>
-            </nav>
-        </header>
-        <div class="bg-main ps-2 ps-lg-3 py-3 pe-2">
-
-            <button class="btn btn-sm px-3 btn-outline-primary mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </button>
-
-
-            <div class="profile-area pe-md-5 mt-3">
-                <section class="profile-banner">
-                    <h6 class="text-green text-end">Your profile is 30% complete now</h6>
-                    <div class="row d-flex justify-content-between mx-0 ps-2 py-1 text-white">
-                        <div class="col-6 col-md-8 py-3">
-                            <div class="row d-flex">
-                                <div class="col-auto me-4">
-                                    <form method="post" enctype="multipart/form-data" action="/upload_image/" id="image_form">
-                                        <div class="profile-img">
-                                            <div class="img-edit">
-                                                <input type="file" class="d-none" name="image" id="imageUpload" accept="image/*" required>
-                                                <label for="imageUpload"></label>
-                                            </div>
-                                            <div class="img-preview mx-auto">
-                                                <div id="imagePreview" style="background-image: url();">
-                                                    <i class="fas fa-camera"></i>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn mt-3 btn-outline-light btn-sm mt-1">Upload
-                                                your image</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-auto mt-3 mt-md-0 d-flex flex-column justify-content-center">
-                                    <h5>Afsana Communication</h5>
-                                    <p class="mb-0">afsana@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-5 col-md-3 d-flex justify-content-end align-items-start">
-                            <button class="btn btn-sm edit-btn btn-light">Edit Profile
-                                <i class="ms-1 fas fa-pencil-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="profile-info mt-3 shadow bg-whitegreen p-1 p-md-4">
-                    <h5 class="ms-0 ms-sm-3">PERSONAL INFORMATION</h5>
-                    <div class="row d-flex justify-content-between mt-3">
-                        <div class="col-md-6 d-flex">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Name:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="Afsana Communication">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="-------">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Country:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="USA">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Birthdate:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="-------">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gender:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="-------">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-6 d-flex">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Registration Date:</td>
-                                        <td class="info-value">
-                                            <input class="text-danger" type="text" name="" value="21th, December 2021">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone Number:</td>
-                                        <td class="info-value">
-                                            <input type="text" name="" value="+88010102255">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Email:</td>
-                                        <td class="info-value">
-                                            <input type="email" name="" value="yourmail@gmail.com">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Password:</td>
-                                        <td class="info-value">
-                                            <input type="password" name="" value="-------">
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <button class="d-none btn save-btn bg-navy text-white px-3 py-1 mt-3">Save</button>
-                </section>
-                <hr class="mt-4">
-                <section class="selection-area row d-flex justify-content-center mt-4">
-                    <div class="col-lg-6">
-                        <h5 class="ms-md-3">Area of Interest</h5>
-                        <h6 class="ms-md-3 fw-bold">Select your interested topics</h6>
-                        <div class="row gx-0 mt-4 d-flex justify-content-center">
-                            <div class="col-md-5 me-lg-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="ms-md-3 btn bg-navy text-white px-4 py-1 mt-3">Save</button>
-
-                    </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <h5 class="ms-md-3">Notification & preference</h5>
-                        <h6 class="ms-md-3 fw-bold">Select your preference list</h6>
-                        <div class="row gx-0 mt-4 d-flex justify-content-center">
-                            <div class="col-md-5 me-lg-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Newsletter Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Email Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        New Article Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Regular Blog Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Risk Assessment
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Push Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        New Article Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Events & Webinar Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        New Service Notification
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        General Notification
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="ms-md-3 btn bg-navy text-white px-4 py-1 mt-3">Save</button>
-
-                    </div>
-
-                </section>
             </div>
-
         </div>
-        <footer class="bg-blue p-2 pt-4 p-md-5 pb-md-2">
-            <div class="d-flex justify-content-center mb-4">
-                <a href="" class="me-5">PRIVACY POLICY</a>
-                <a href="">TERMS OF USE</a>
+    </div>
+</div>
+<div class="row row--equal background_changer--blur0" data-component="grid" data-builder="edit del clone dnd col" alt="" style="background-color: rgba(0, 0, 0, 0); border-radius: 0px; border-style: none; border-width: 0px; margin-top: 20px; margin-bottom: 0px; background-image: none; opacity: 1;">
+    <div class="col-md-4" data-builder="edit del dnd">
+        <div class="js_kartra_component_holder">
+            <div data-component="list">
+                <ul class="kartra_list" data-builder="del dnd clone">
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21912365_16293709587nA1.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>BLACKMAILING</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative; margin-top: 0px; margin-bottom: 20px;">
+                                <p>
+                                    <meta charset="utf-8"><span style="color: rgb(0, 0, 0); font-size: 0.65rem;">Subsequent to getting data they need cash from the individual.</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21912370_1629370975K8I2.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>RUMORS</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>
+                                    <meta charset="utf-8"><span style="color:#000000;">By creating a fake account and spreading the rumours.</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21912382_16293709979J73.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>RETRIBUTION PORN</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>
+                                    <meta charset="utf-8">
+                                    <meta charset="utf-8"><span style="color:#000000;">Distributing private and physically express pictures or recordings.</span></p>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
             </div>
+        </div>
+    </div>
+    <div class="col-md-4 background_changer--blur0" data-builder="edit del dnd" alt="" style="background-color: rgba(0, 0, 0, 0); border-radius: 0px; border-style: none; border-width: 0px; padding: 0px 5px; background-image: none; opacity: 1;">
+        <div class="js_kartra_component_holder">
+            <div data-component="image" href="javascript: void(0);"><img id="h-300" class="kartra_image kartra_image--full pull-center background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21743267_1628756160NKdonline_blackmail_1.jpg" onerror="this.onerror=null;this.src='//d2uolguxr56s4e.cloudfront.net/img/kartrapages/placeholder.jpg';"
+                    data-builder="edit del clone resize dnd" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px auto; opacity: 1;"></div>
+        </div>
+    </div>
+    <div class="col-md-4 background_changer--blur0" data-builder="edit del dnd" alt="" style="background-color: rgba(0, 0, 0, 0); border-radius: 0px; border-style: none; border-width: 0px; padding: 0px 25px; background-image: none; opacity: 1;">
+        <div class="js_kartra_component_holder">
+            <div data-component="list">
+                <ul class="kartra_list" data-builder="del dnd clone">
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21913136_1629373969ubz4.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>HACK</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative; margin-top: 0px; margin-bottom: 20px;">
+                                <p>
+                                    <meta charset="utf-8"><span style="color:#000000;">Somebody hacked your Id and went through your private message.</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21913159_162937403389p5.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>CYBERSTALKING</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative; margin-top: 0px; margin-bottom: 20px;">
+                                <p>
+                                    <meta charset="utf-8"><span style="color:#000000;">Using the web for harassment, scare or threaten somebody.</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-builder="dnd del clone" class="kartra_list__item kartra_list__item--table">
+                        <div class="kartra_list_img_elem" href="javascript: void(0);">
+                            <img class="kartra_list_img_elem__image kartra_list_img_elem__image--small pull-left background_changer--blur0" src="//kartrausers.s3.amazonaws.com/techforing/21913160_1629374053UIy6.png" data-builder="edit del" data-selector="img" alt="" style="border-color: rgb(51, 51, 51); border-style: none; border-width: 0px; margin: 0px; opacity: 1;">
+                        </div>
+                        <div class="kartra_item_info kartra_item_info--padding-left-small">
+                            <div class="kartra_item_info__headline kartra_item_info__headline--h5 kartra_item_info__headline--black" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative;">
+                                <p>CATFISHING</p>
+                            </div>
+                            <div class="kartra_item_info__text kartra_item_info__text--light-grey kartra_item_info__text--margin-bottom-extra-medium" data-builder="content del" data-selector="*[data-builder*=&quot;content&quot;]" style="position: relative; margin-top: 0px; margin-bottom: 10px;">
+                                <p>
+                                    <meta charset="utf-8">
+                                    <meta charset="utf-8"><span style="color:#000000;">Someone will make an invented personality to begin a relationship.</span></p>
+                            </div>
+                        </div>
+                    </li>
 
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="https://www.facebook.com/techforing/">
-                    <img src="./tfimg/facebook.png" class="me-3" alt="">
-                </a>
-                <a href="https://www.linkedin.com/company/techforingltd./">
-                    <img src="./tfimg/linkedin.png" class="me-3" alt="">
-                </a>
-                <a href="https://twitter.com/techforingltd?lang=en">
-                    <img src="./tfimg/twitter-(1).png" class="me-3" alt="">
-                </a>
-                <a href="https://www.instagram.com/techforingltd/">
-                    <img src="./tfimg/Instagram.png" alt="">
-                </a>
+
+                </ul>
             </div>
-
-            <div class="p-3 p-md-4 pb-2 text-center text-white ">
-                <p class="pt-4 border-top border-light">Copyright &copy; 2021 Techforing Ltd.
-                </p>
-            </div>
-        </footer>
-    </main>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="menubar.js"></script>
-    <script>
-        let infoValues = document.querySelectorAll('.profile-info .info-value');
-        let profileInputs = document.querySelectorAll('.profile-info input');
-
-        profileInputs.forEach(input => {
-            input.disabled = true;
-        });
-
-        document.querySelector('.edit-btn').addEventListener('click', (e) => {
-            infoValues.forEach(info => {
-                info.classList.toggle('input-as-text');
-            });
-
-            profileInputs.forEach(input => {
-                input.disabled = false;
-            });
-
-            document.querySelector('.save-btn').classList.toggle('d-none');
-            e.target.classList.toggle('d-none');
-        });
-        document.querySelector('.save-btn').addEventListener('click', (e) => {
-            infoValues.forEach(info => {
-                info.classList.toggle('input-as-text');
-            });
-
-            profileInputs.forEach(input => {
-                input.disabled = true;
-            });
-
-            document.querySelector('.edit-btn').classList.toggle('d-none');
-            e.target.classList.toggle('d-none');
-        });
-
-
-        document.getElementById("imageUpload").addEventListener("change", function(e) {
-            if ((this.files[0].type).slice(0, 5) != "image") {
-                document.getElementById("image_form").reset();
-                alert('Invalid Image File!');
-            } else {
-                if (this.files && this.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        document.querySelector('#imagePreview').style.backgroundImage = 'url(' + e.target.result + ')';
-                    }
-                    reader.readAsDataURL(this.files[0]);
-                    var fileInput = document.getElementById('imageUpload');
-                    var filename = fileInput.files[0].name;
-                    document.querySelector('.fa-camera').classList.add('d-none');
-                }
-            }
-        });
-
-        document.querySelectorAll('.selection-area label').forEach(label => {
-            label.classList.add('text-truncate');
-        });
-    </script>
-</body>
-
-</html>
+        </div>
+    </div>
+</div>

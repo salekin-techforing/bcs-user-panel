@@ -6,7 +6,7 @@ menuItemsName.forEach((item, index) => {
         let style = document.createElement('style');
         style.innerHTML = `
         .menubar li:nth-child(${index + 1}) {
-            background-color: #022E75;
+            background-color: #182F59;
                     border-radius: 5px;
                     border-bottom: none;
                     position: relative;
