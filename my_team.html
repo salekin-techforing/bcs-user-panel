@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>
-        Dashboard
+        My Team
     </title>
     <link rel="icon" href="tfimg/Techforing-Icon.png" type="image/x-icon" />
 </head>
@@ -371,9 +371,9 @@
 
     <script>
         let emailInput = document.querySelector('.team-statistics .email-input');
+        let allRemoveBtn = document.querySelectorAll('.email-container .remove-email');
         document.getElementById('addNew').addEventListener('click', () => {
             emailInput.focus();
-
         });
 
         function ValidateEmail(email) {
@@ -388,10 +388,24 @@
                                         </div>`;
 
                 let allEmail = document.querySelectorAll('.email-container .email');
-                let lastEmail = allEmail[allEmail.length - 1];
-                lastEmail.insertAdjacentHTML('afterend', newEmail);
+
+                if (allEmail.length == 0) {
+                    emailInput.parentNode.insertAdjacentHTML('beforebegin', newEmail);
+                } else {
+                    let lastEmail = allEmail[allEmail.length - 1];
+                    lastEmail.insertAdjacentHTML('afterend', newEmail);
+                }
+
                 emailInput.value = '';
+                removeEmail();
             }
+        }
+        let removeEmail = () => {
+            document.querySelectorAll('.email-container .remove-email').forEach(email => {
+                email.addEventListener('click', e => {
+                    document.querySelector('.email-container').removeChild(e.target.parentNode.parentNode);
+                });
+            });
         }
 
         emailInput.addEventListener('keydown', (e) => {
@@ -418,6 +432,8 @@
             let newEmail = e.target.parentNode.parentNode.children[0].value;
             addEmail(newEmail);
         });
+
+        removeEmail();
 
         document.querySelectorAll('.my-team-img .img-logo').forEach((img, index) => {
             let value = `-${20*index}px`;

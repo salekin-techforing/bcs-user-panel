@@ -416,6 +416,7 @@ ol li {
 
 .remove-email {
     cursor: pointer;
+    padding: 5px;
 }
 
 .my-team-img .img-logo {
