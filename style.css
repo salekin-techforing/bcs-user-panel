@@ -67,6 +67,18 @@ body {
     font-size: 18px;
 }
 
+.fs-7 {
+    font-size: 14px;
+}
+
+.h-25p {
+    height: 25px;
+}
+
+.h-200p {
+    height: 200px;
+}
+
 .bg-main {
     background-color: var(--main);
 }
@@ -402,6 +414,10 @@ ol li {
   my team 
 ----------------- */
 
+.remove-email {
+    cursor: pointer;
+}
+
 .my-team-img .img-logo {
     border-radius: 50%;
     width: 45px;
@@ -423,6 +439,23 @@ ol li {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
     color: white !important;
+}
+
+.team-statistics .email-input:focus {
+    outline: none;
+}
+
+.team-statistics .email-input {
+    border: none;
+}
+
+.team-statistics .email {
+    height: 25px;
+    background-color: rgb(212, 211, 211);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 

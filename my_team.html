@@ -157,7 +157,6 @@
         </ul>
     </div>
 
-
     <main class="w-80 overflow-hidden">
         <div class="bg-main ps-2 ps-lg-3 py-3 pe-2">
             <button class="btn btn-sm px-3 btn-outline-primary mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -165,7 +164,7 @@
             </button>
 
             <div class="team-container">
-                <section>
+                <section class="team-statistics">
                     <div class="border-bottom border-gray pb-2 d-flex justify-content-between align-items-center">
                         <h4 class="fw-bold mb-0">Create your team</h4>
                         <button data-bs-toggle="modal" data-bs-target="#addNew" class="btn bg-navy">
@@ -184,18 +183,22 @@
                                     <h5 class="text-green text-center">You can invite 15 colleagues as per quotation</h5>
 
                                     <h5 class="mt-3">Email(Required):</h5>
-                                    <div class="border border-dark d-flex">
-                                        <div class="bg-gray p-1 pe-2">
-                                            <span>biyogafsana@gmail.com</span>
-                                            <button class="btn"><span>&Cross;</span></button>
+                                    <div class="email-container d-flex flex-wrap justify-content-start align-items-start align-content-start border border-dark fs-7 p-2 h-200p">
+                                        <div class="email">
+                                            <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
                                         </div>
-                                        <div class="bg-gray p-1 pe-2">
-                                            <span>biyogafsana@gmail.com</span>
-                                            <button class="btn"><span>&Cross;</span></button>
+                                        <div class="email">
+                                            <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
                                         </div>
-                                        <div class="bg-gray p-1 pe-2">
-                                            <span>biyogafsana@gmail.com</span>
-                                            <button class="btn"><span>&Cross;</span></button>
+                                        <div class="email">
+                                            <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
+                                        </div>
+                                        <div class="email">
+                                            <span>biyogafsana1@gmail.com <span class="remove-email">&Cross;</span></span>
+                                        </div>
+                                        <div class="h-25p">
+                                            <input autocomplete="off" class="email-input" maxlength="30" type="email" placeholder="Type an email">
+                                            <button class="add-email btn p-0"><i class="icofont-plus-circle"></i></button>
                                         </div>
                                     </div>
 
@@ -233,7 +236,7 @@
                                 <div class="img-logo bg-navy d-flex align-items-center justify-content-center">+15</div>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-9 mt-3 mt-md-0">
                             <div class="user-chart-box">
                                 <canvas id="user-chart" height="100"></canvas>
                             </div>
@@ -367,6 +370,55 @@
 
 
     <script>
+        let emailInput = document.querySelector('.team-statistics .email-input');
+        document.getElementById('addNew').addEventListener('click', () => {
+            emailInput.focus();
+
+        });
+
+        function ValidateEmail(email) {
+            let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            return email.match(validRegex) ? true : false;
+        }
+
+        let addEmail = (email) => {
+            if (ValidateEmail(email)) {
+                let newEmail = `<div class="email">
+                                        <span>${email} <span class="remove-email">&Cross;</span></span>
+                                        </div>`;
+
+                let allEmail = document.querySelectorAll('.email-container .email');
+                let lastEmail = allEmail[allEmail.length - 1];
+                lastEmail.insertAdjacentHTML('afterend', newEmail);
+                emailInput.value = '';
+            }
+        }
+
+        emailInput.addEventListener('keydown', (e) => {
+            let email = e.target.value;
+            if (e.key == 'Enter') {
+                addEmail(email);
+            }
+        });
+        emailInput.addEventListener('keyup', (e) => {
+            if (e.key != 'Enter') {
+                if (ValidateEmail(e.target.value)) {
+                    e.target.style.backgroundColor = '#28a745';
+                    e.target.style.color = 'white';
+                } else {
+                    e.target.style.backgroundColor = '#dc3545';
+                    e.target.style.color = 'white';
+                }
+            } else {
+                e.target.style.backgroundColor = 'white';
+                e.target.style.color = 'black';
+            }
+        });
+        document.querySelector('.email-container .add-email').addEventListener('click', e => {
+            let newEmail = e.target.parentNode.parentNode.children[0].value;
+            addEmail(newEmail);
+        });
+
         document.querySelectorAll('.my-team-img .img-logo').forEach((img, index) => {
             let value = `-${20*index}px`;
             img.style.left = value;
