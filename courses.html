@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+        Dashboard
+    </title>
+    <link rel="icon" href="tfimg/Techforing-Icon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+            <div class="container-fluid d-flex justify-content-lg-around px-1 px-md-5">
+                <a class="navbar-brand pt-2" href="/">
+                    <img src="tfimg/logo.png" width="125" height="60" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center fw-bolder">
+                        <li class="nav-item me-4">
+                            <form class="d-flex">
+                                <input class="form-control me-2 rounded-pill shadow-sm fontAwesome" type="search" placeholder="&#xf002; Search..." aria-label="Search">
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Anjelina
+                                <img class="ms-2 rounded-circle" src="tfimg/anjelina.jpg"
+                                    width="40" height="40" alt="">
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item text-center" href="{% host_url 'bcs_user_settings' %}">
+                                        <i class="icofont-ui-user me-2"></i> My Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center" href="{% host_url 'bcs_user_settings' %}">
+                                        <i class="icofont-edit me-2"></i> Edit Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menubar</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menubar">
+                <li>
+                    <a href="courses.html">
+                        <i class="icofont-home"></i> Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html">
+                        <i class="icofont-cubes"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <i class="icofont-cart-alt"></i> Order History
+                    </a>
+                </li>
+                <li>
+                    <a href="subscriptions.html">
+                        <i class="icofont-dollar"></i> Subscriptions
+                    </a>
+                </li>
+                <li>
+                    <a href="events.html">
+                        <i class="icofont-ui-calendar"></i> Events & Webinars
+                    </a>
+                </li>
+                <li>
+                    <a href="notifications.html">
+                        <i class="icofont-notification"></i> Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="icofont-options"></i> Settings
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-navy px-4">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-20 h-100 position-fixed bg-white shadow-sm px-1 pt-2 d-none d-lg-block">
+        <ul class="menubar">
+            <li>
+                <a href="courses.html">
+                    <i class="bi bi-house"></i> Courses
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="icofont-cubes"></i> Services
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="icofont-cart-alt"></i> Order History
+                </a>
+            </li>
+            <li>
+                <a href="subscriptions.html">
+                    <i class="icofont-dollar"></i> Subscriptions
+                </a>
+            </li>
+            <li>
+                <a href="events.html">
+                    <i class="icofont-ui-calendar"></i> Events & Webinars
+                </a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="icofont-notification"></i> Notifications
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="icofont-options"></i> Settings
+                </a>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-navy px-4">Log Out</button>
+            </li>
+        </ul>
+    </div>
+
+
+    <main class="w-80 overflow-hidden">
+        <div class="bg-main ps-2 ps-lg-3 py-3 pe-2">
+            <button class="btn btn-sm px-3 btn-outline-primary mx-auto mb-5 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+            <div class="course-container mt-2 position-relative">
+                <div class="courses d-none">
+                    <h4 class="fw-bold border-bottom border-gray pb-14p mb-4">All Academy Courses</h4>
+
+                    <h5 class="fw-bold mb-3">PROFESSIONAL</h5>
+                    <div class="row mx-0 bg-lightgreen shadow py-3">
+                        <div class="col-md-5 d-flex">
+                            <div>
+                                <img src="./tfimg/services/user.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <h6 class="fw-bold">CCSP Course For Professional</h6>
+                                <p class="mb-0 fs-14 text-justify">This eight-week course consists of instructional content and expert-led lab classes, which will be a massive boost to becoming certified cybersecurity professional.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Duration</h6>
+                            <p>2 Months</p>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Total Classes</h6>
+                            <p>30 Classes</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-evenly">
+                            <button class="view-btn btn bg-green py-1 px-3">View</button>
+                            <button class="btn bg-green py-1 px-3">Enroll</button>
+                        </div>
+                    </div>
+                    <h5 class="mt-5 fw-bold mb-3">CORPORATE</h5>
+                    <div class="row mx-0 bg-lightgreen shadow py-3">
+                        <div class="col-md-5 d-flex">
+                            <div>
+                                <img src="./tfimg/services/user.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <h6 class="fw-bold">Course Title</h6>
+                                <p class="mb-0 fs-14 text-justify">This eight-week course consists of instructional content and expert-led lab classes, which will be a massive boost to becoming certified cybersecurity professional.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Duration</h6>
+                            <p>2 Months</p>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Total Classes</h6>
+                            <p>30 Classes</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-evenly">
+                            <button class="view-btn btn bg-green py-1 px-3">View</button>
+                            <button class="btn bg-green py-1 px-3">Enroll</button>
+                        </div>
+                    </div>
+                    <h5 class="mt-5 fw-bold mb-3">LAW INFORCEMENT AGENCY</h5>
+                    <div class="row mx-0 bg-lightgreen shadow py-3">
+                        <div class="col-md-5 d-flex">
+                            <div>
+                                <img src="./tfimg/services/user.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <h6 class="fw-bold">Course Title</h6>
+                                <p class="mb-0 fs-14 text-justify">This eight-week course consists of instructional content and expert-led lab classes, which will be a massive boost to becoming certified cybersecurity professional.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Duration</h6>
+                            <p>2 Months</p>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Total Classes</h6>
+                            <p>30 Classes</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-evenly">
+                            <button class="view-btn btn bg-green py-1 px-3">View</button>
+                            <button class="btn bg-green py-1 px-3">Enroll</button>
+                        </div>
+                    </div>
+                    <h5 class="mt-5 fw-bold mb-3">EDUCATIONAL INSTITUTE</h5>
+                    <div class="row mx-0 bg-lightgreen shadow py-3">
+                        <div class="col-md-5 d-flex">
+                            <div>
+                                <img src="./tfimg/services/user.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <h6 class="fw-bold">Course Title</h6>
+                                <p class="mb-0 fs-14 text-justify">This eight-week course consists of instructional content and expert-led lab classes, which will be a massive boost to becoming certified cybersecurity professional.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Duration</h6>
+                            <p>2 Months</p>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h6 class="fw-bold">Total Classes</h6>
+                            <p>30 Classes</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-evenly">
+                            <button class="view-btn btn bg-green py-1 px-3">View</button>
+                            <button class="btn bg-green py-1 px-3">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-course px-2">
+                    <h5 class="fw-bold border-bottom border-gray pb-14p text-green">CCSP Course For Professional</h5>
+                    <button id="back-btn" class="btn btn-outline-success btn-sm d-non position-absolute top-sm-0 end-0">
+                        <i class="bi bi-arrow-left"></i> Back to list
+                    </button>
+
+                    <h6 class="mt-4 fw-bold">Requirements</h6>
+                    <ul>
+                        <li>Lorem ipsum is simply dummy text of the printing and typesetting industry</li>
+                        <li>Lorem ipsum is simply dummy text of the printing and typesetting industry</li>
+                        <li>Lorem ipsum is simply dummy text of the printing and typesetting industry</li>
+                    </ul>
+
+                    <div class="learning-content mt-5 px-2">
+                        <h6 class="fw-bold mb-3">What You Will Learn:</h6>
+                        <div class="ps-2">
+                            <p class="text-truncate">
+                                <i class="bi bi-check-lg me-1"></i> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text of the printing and typesetting industry
+                            </p>
+                            <p class="text-truncate">
+                                <i class="bi bi-check-lg me-1"></i> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text of the printing and typesetting industry
+                            </p>
+                            <p class="text-truncate">
+                                <i class="bi bi-check-lg me-1"></i> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text of the printing and typesetting industry
+                            </p>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-5 fw-bold">Who this course is for</h6>
+                    <ul>
+                        <li>Information security enthusiasts and those who are looking for a perfect start in Cyber Security</li>
+                        <li>Those who are looking to change their field to Information Technology</li>
+                        <li>Those who want to become a Security Professional</li>
+                        <li>IT Security Consultants who want to refresh their knowledge</li>
+                    </ul>
+
+                    <div class="mt-5 row mx-0">
+                        <div class="col-md-8 d-flex justify-content-between">
+                            <h6 class="fw-bold">Course Content</h6>
+                            <h6>8 Sections</h6>
+                            <h6>40 Lectures</h6>
+                            <h6>8 Weeks</h6>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 course-info">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <!-- <span class="title fw-bold">INTRODUCTION TO ETHICAL HACKING</span>
+                                        <span>7 on demand videos</span>
+                                        <span>5 downloadable resources</span>
+                                        <span class="fw-bold">LECTURE 1</span> -->
+                                        <table class="w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th class="title fw-bold">INTRODUCTION TO ETHICAL HACKING</th>
+                                                    <th>7 on demand videos</th>
+                                                    <th>5 downloadable resources</th>
+                                                    <th class="fw-bold">LECTURE 1</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <table class="w-100">
+                                            <tbody class="fs-14">
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">Welcome and Introduction to the Instructor</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">50m</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn p-0">
+                                                            <i class="bi bi-file-earmark-pdf"></i> Cybersecurity Introduction Guide 1
+                                                        </a>
+                                                    </td>
+                                                    <td>Module 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">What is hacking? Who is a hacker?</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">1h 20m</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn p-0">
+                                                            <i class="bi bi-file-earmark-pdf"></i> Cybersecurity Introduction Guide 2
+                                                        </a>
+                                                    </td>
+                                                    <td>Module 2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">Skills of an ethical hacker, Types of hacker</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">40m</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn p-0">
+                                                            <i class="bi bi-file-earmark-pdf"></i> Cybersecurity Introduction Guide 3
+                                                        </a>
+                                                    </td>
+                                                    <td>Module 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">Goals and learning objectives</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">20m</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn p-0">
+                                                            <i class="bi bi-file-earmark-pdf"></i> Cybersecurity Introduction Guide 4
+                                                        </a>
+                                                    </td>
+                                                    <td>Module 4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">What is Ethical hacking?</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">1h</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>Module 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col1">
+                                                        <i class="bi bi-play-btn"></i>
+                                                        <h6 class="d-inline ps-2 fw-bold">Why Ethical hacking is necessary?</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="d-inline me-4">1h 10m</h6>
+                                                        <button class="btn bg-transparent p-0 text-green">Preview</button>
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>Module 6</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bg-blue p-2 pt-4 p-md-5 pb-md-2">
+
+            <div class="d-flex justify-content-center mb-4">
+                <a href="" class="me-5">PRIVACY POLICY</a>
+                <a href="">TERMS OF USE</a>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com/techforing/">
+                    <img src="tfimg/facebook.png" class="me-3" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/techforingltd./">
+                    <img src="tfimg/linkedin.png" class="me-3" alt="">
+                </a>
+                <a href="https://twitter.com/techforingltd?lang=en">
+                    <img src="tfimg/twitter.png" class="me-3" alt="">
+                </a>
+                <a href="https://www.instagram.com/techforingltd/">
+                    <img src="tfimg/Instagram.png" alt="">
+                </a>
+            </div>
+
+            <div class="p-3 p-md-4 pb-2 text-center text-white ">
+                <p class="pt-4 border-top border-light">Copyright &copy; 2021 Techforing Ltd.
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="menubar.js"></script>
+
+    <script>
+        document.querySelectorAll('.course-container .view-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+
+            });
+        });
+
+        document.querySelectorAll('.learning-content p').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('text-truncate');
+            });
+        });
+
+        document.querySelectorAll('.accordion table tr').forEach(tr => {
+            console.log(tr.children[0])
+            tr.children[0].style.width = '40%';
+        })
+    </script>
+</body>
+
+</html>

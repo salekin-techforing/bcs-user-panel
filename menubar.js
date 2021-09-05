@@ -1,4 +1,4 @@
-let menuItemsName = ['dashboard', 'services', 'orders', 'team', 'subscriptions', 'events', 'notifications', 'settings'];
+let menuItemsName = ['courses', 'services', 'orders', 'subscriptions', 'events', 'notifications', 'settings'];
 let url = window.location.href;
 
 menuItemsName.forEach((item, index) => {
@@ -6,7 +6,7 @@ menuItemsName.forEach((item, index) => {
         let style = document.createElement('style');
         style.innerHTML = `
         .menubar li:nth-child(${index + 1}) {
-            background-color: #182F59;
+            background-color: #5BBC2E;
                     border-radius: 5px;
                     border-bottom: none;
                     position: relative;

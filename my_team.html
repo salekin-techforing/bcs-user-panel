@@ -112,11 +112,6 @@
     <div class="w-20 h-100 position-fixed bg-white shadow-sm px-1 pt-2 d-none d-lg-block">
         <ul class="menubar">
             <li>
-                <a href="dashboard.html">
-                    <i class="icofont-home"></i> Dashboard
-                </a>
-            </li>
-            <li>
                 <a href="services.html">
                     <i class="icofont-cubes"></i> Services
                 </a>
@@ -128,7 +123,7 @@
             </li>
             <li>
                 <a href="my_team.html">
-                    <i class="icofont-cart-alt"></i> My Team
+                    <i class="icofont-people"></i> My Team
                 </a>
             </li>
             <li>
@@ -188,13 +183,7 @@
                                             <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
                                         </div>
                                         <div class="email">
-                                            <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
-                                        </div>
-                                        <div class="email">
-                                            <span>biyogafsana@gmail.com <span class="remove-email">&Cross;</span></span>
-                                        </div>
-                                        <div class="email">
-                                            <span>biyogafsana1@gmail.com <span class="remove-email">&Cross;</span></span>
+                                            <span>salekin.techforing@gmail.com <span class="remove-email">&Cross;</span></span>
                                         </div>
                                         <div class="h-25p">
                                             <input autocomplete="off" class="email-input" maxlength="30" type="email" placeholder="Type an email">
@@ -210,7 +199,6 @@
                                         </label>
                                     </div>
                                     <button class="btn bg-navy p-1 px-3">INVITE</button>
-
                                 </div>
                             </div>
                         </div>
@@ -220,10 +208,10 @@
                 <section class="mt-3">
                     <div class="row mx-0 shadow p-2">
                         <div class="col-md-3">
-                            <h6 class="fw-bold line-top-blue line-sm">Total User
+                            <h6 class="user">Total User
                                 <br> 10
                             </h6>
-                            <h6 class="pt-2 fw-bold line-top-blue line-sm">New User
+                            <h6 class="pt-2 user">New User
                                 <br> 2
                             </h6>
 
@@ -245,9 +233,9 @@
                 </section>
 
                 <section class="mt-5">
-                    <table id="myTable" class="mt-5 table text-center border border-navy">
-                        <thead>
-                            <tr class="fw-bold text-navy">
+                    <table id="myTable" class="mt-5 table text-center border border-gray">
+                        <thead class="border border-gray">
+                            <tr class="fw-bold text-navy border border-gray">
                                 <td>Name</td>
                                 <td>Email</td>
                                 <td>Status</td>
@@ -371,7 +359,6 @@
 
     <script>
         let emailInput = document.querySelector('.team-statistics .email-input');
-        let allRemoveBtn = document.querySelectorAll('.email-container .remove-email');
         document.getElementById('addNew').addEventListener('click', () => {
             emailInput.focus();
         });
@@ -382,12 +369,13 @@
         }
 
         let addEmail = (email) => {
-            if (ValidateEmail(email)) {
+            let allEmail = document.querySelectorAll('.email-container .email');
+
+            console.log(allEmail.length);
+            if (ValidateEmail(email) && allEmail.length < 16) {
                 let newEmail = `<div class="email">
                                         <span>${email} <span class="remove-email">&Cross;</span></span>
                                         </div>`;
-
-                let allEmail = document.querySelectorAll('.email-container .email');
 
                 if (allEmail.length == 0) {
                     emailInput.parentNode.insertAdjacentHTML('beforebegin', newEmail);
@@ -429,8 +417,10 @@
             }
         });
         document.querySelector('.email-container .add-email').addEventListener('click', e => {
-            let newEmail = e.target.parentNode.parentNode.children[0].value;
-            addEmail(newEmail);
+            let newEmail = e.target.parentNode.parentNode.children[0];
+            newEmail.style.backgroundColor = 'white';
+            newEmail.style.color = 'black';
+            addEmail(newEmail.value);
         });
 
         removeEmail();
